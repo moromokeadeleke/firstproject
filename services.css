@@ -1,0 +1,88 @@
+*{
+    text-decoration: none;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #0b0e14;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+
+header .logo {
+    text-decoration: none;
+    color: #D6B982;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1;
+}
+
+header .logo-main {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 42px;
+    font-weight: 500;
+    letter-spacing: 6px;
+}
+
+.logo-sub {
+    font-family: "Montserrat", sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: 7px;
+    margin-top: 6px;
+}
+
+header .navbar{
+    display: flex;
+    gap: 50px;
+    
+}
+
+header .navbar a{
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+header .navbar a:hover{
+    border-bottom: 2px solid #bb925c;
+    padding-bottom: 10px;
+}
+
+header .btn{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+header .btn a{
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .btn a:hover{
+    color: #c5a06a;
+}
+
+header .btn #touch{
+    border: 1px solid #bb925c;
+    border-radius: 3px;
+    padding: 13px 29px;
+}

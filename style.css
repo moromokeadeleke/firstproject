@@ -17,6 +17,7 @@ body{
 }
 
 header{
+    background-color: #0b0e14;
     height: 90px;
     display: flex;
     justify-content: space-between;
@@ -51,7 +52,7 @@ header .logo-main {
 header .navbar{
     display: flex;
     gap: 50px;
-    
+
 }
 
 header .navbar a{
@@ -92,46 +93,4 @@ header .btn #touch{
     border: 1px solid #bb925c;
     border-radius: 3px;
     padding: 13px 29px;
-}
-
-main{
-    padding-left: 50px;
-    width: 40%;
-    height: 400px;
-}
-
-main h3{
-    font-family: "Montserrat", sans-serif;
-    font-size: 12px;
-    font-weight: 500;
-    letter-spacing: 2px;
-    color: #c5a06a;
-    padding-top: 20px;
-}
-
-main h1{
-    font-family: "Cormorant Garamond", serif;
-    font-size: 60px;
-    font-weight: 500;
-    color: white;
-}
-
-main p{
-    color: #f1f1f1;
-    font-size: 16px;
-    font-weight: 400;
-    font-family: "Montserrat", sans-serif;
-    max-width: 350px;
-    margin-bottom: 55px;
-
-}
-
-main a{
-    background-color: #c5a06a;
-    padding: 12px 20px;
-    font-size: 12px;
-    font-weight: 600;
-    font-family: "Montserrat", sans-serif;
-    letter-spacing: 0.5px;
-    color: #17191A;
 }

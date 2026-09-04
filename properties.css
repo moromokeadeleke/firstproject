@@ -1,3 +1,9 @@
+/* ==========================================================================
+   PROPERTIES & SERVICES PAGES
+   Append everything below to the existing style.css.
+   Reuses header, .logo, .navbar, .btn, #touch from the shared header block —
+   do not redefine those here.
+   ========================================================================== */
 *{
     text-decoration: none;
 }
@@ -7,7 +13,6 @@ body{
     padding: 0;
     box-sizing: border-box;
 }
-
 
 header{
     background-color: #0b0e14;
@@ -87,3 +92,625 @@ header .btn #touch{
     border-radius: 3px;
     padding: 13px 29px;
 }
+:root {
+    --navy: #0b0e14;
+    --gold: #bb925c;
+    --gold-light: #D6B982;
+    --gold-hover: #c5a06a;
+    --cream: #f7f5f0;
+    --text-dark: #1c1c1c;
+    --text-muted: #6b6b6b;
+    --border-light: #e6e1d8;
+}
+
+header .navbar a.active {
+    border-bottom: 2px solid var(--gold);
+    padding-bottom: 10px;
+}
+
+/* ---------- Hero (properties + services share the same treatment) ---------- */
+
+.properties-hero,
+.services-hero {
+    background-color: var(--navy);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+}
+
+.properties-hero {
+    background-image: url("images/properties-hero.jpg");
+}
+
+.services-hero {
+    background-image: url("images/services-hero.jpg");
+}
+
+.properties-hero main,
+.services-hero main {
+    padding: 90px 40px 110px;
+    max-width: 640px;
+}
+
+.properties-hero .eyebrow,
+.services-hero .eyebrow {
+    color: var(--gold-light);
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin: 0 0 18px;
+}
+
+.properties-hero h1,
+.services-hero h1 {
+    color: #ffffff;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 52px;
+    font-weight: 500;
+    line-height: 1.15;
+    margin: 0 0 22px;
+}
+
+.properties-hero .sub-text,
+.services-hero .sub-text {
+    color: #d8d8d8;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    max-width: 480px;
+    margin: 0;
+}
+
+/* ---------- Filter bar ---------- */
+
+.filter-bar {
+    background-color: var(--cream);
+    padding: 34px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+    border-bottom: 1px solid var(--border-light);
+}
+
+.filter-tabs {
+    display: flex;
+    gap: 14px;
+}
+
+.filter-tabs .tab {
+    background: none;
+    border: 1px solid var(--border-light);
+    border-radius: 3px;
+    padding: 10px 22px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: var(--text-muted);
+    cursor: pointer;
+}
+
+.filter-tabs .tab.active {
+    border-color: var(--gold);
+    color: var(--gold);
+}
+
+.filter-form {
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+}
+
+.filter-form select {
+    flex: 1 1 190px;
+    padding: 13px 16px;
+    border: 1px solid var(--border-light);
+    border-radius: 3px;
+    background-color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    color: var(--text-dark);
+}
+
+.filter-form .search-btn {
+    flex: 0 0 auto;
+    background-color: var(--gold);
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 13px 34px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.filter-form .search-btn:hover {
+    background-color: var(--gold-hover);
+}
+
+/* ---------- Property grid ---------- */
+
+.property-grid {
+    background-color: var(--cream);
+    padding: 10px 40px 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.property-card {
+    background-color: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(11, 14, 20, 0.06);
+}
+
+.property-image {
+    position: relative;
+    width: 100%;
+    height: 210px;
+}
+
+.property-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.property-image .badge {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    padding: 6px 14px;
+    border-radius: 3px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.badge.for-sale {background-color: var(--gold);
+}
+
+.badge.for-rent {
+    background-color: var(--navy);
+}
+
+.property-body {
+    padding: 24px 22px 22px;
+}
+
+.property-body h3 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin: 0 0 10px;
+}
+
+.property-body .location {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--text-muted);
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    margin: 0 0 16px;
+}
+
+.property-body .location svg {
+    color: var(--gold);
+    flex-shrink: 0;
+}
+
+.property-body .specs {
+    display: flex;
+    gap: 18px;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 18px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    color: var(--text-muted);
+    border-top: 1px solid var(--border-light);
+    border-bottom: 1px solid var(--border-light);
+    padding: 14px 0;
+}
+
+.property-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.property-footer .price {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 19px;
+    font-weight: 600;
+    color: var(--gold);
+}
+
+.property-footer .view-link {
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    color: var(--text-dark);
+}
+
+.property-footer .view-link:hover {
+    color: var(--gold);
+}
+
+/* ---------- Pagination ---------- */
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 0 0 70px;
+    background-color: var(--cream);
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+}
+
+.pagination a {
+    color: var(--text-muted);
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+}
+
+.pagination .page-num.active {
+    background-color: var(--gold);
+    color: #fff;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: var(--border-light);
+}
+
+/* ---------- Services grid ---------- */
+
+.services-section {
+    background-color: var(--cream);
+    padding: 70px 40px 90px;
+    text-align: left;
+}
+
+.services-section .section-eyebrow {
+    max-width: 1280px;
+    margin: 0 auto 30px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    letter-spacing: 3px;
+    color: var(--gold);
+}
+
+.services-grid {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background-color: var(--border-light);
+    border: 1px solid var(--border-light);
+}
+
+.service-card {
+    background-color: var(--cream);
+    padding: 44px 38px;
+}
+
+.service-icon {
+    color: var(--gold);
+    margin-bottom: 22px;
+}
+
+.service-card h3 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin: 0 0 12px;
+}
+
+.service-card p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--text-muted);
+    margin: 0 0 20px;
+}
+
+.learn-link {
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    color: var(--text-dark);
+}
+
+.learn-link:hover {
+    color: var(--gold);
+}
+
+/* ---------- CTA section ---------- */
+
+.cta-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.cta-image {
+    height: 100%;
+    min-height: 340px;
+}
+
+.cta-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.cta-content {
+    background-color: var(--navy);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px;
+}
+
+.cta-content h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 34px;
+    font-weight: 500;
+    line-height: 1.25;
+    margin: 0 0 18px;
+}
+
+.cta-content p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    color: #cfcfcf;
+    margin: 0 0 28px;
+    max-width: 380px;
+}
+
+.cta-btn {
+    align-self: flex-start;
+    background-color: var(--gold);
+    color: #fff;
+    border-radius: 3px;padding: 14px 30px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    letter-spacing: 1px;
+    transition: background-color 0.2s ease;
+}
+
+.cta-btn:hover {
+    background-color: var(--gold-hover);
+}
+
+/* ---------- Footer ---------- */
+
+footer {
+    background-color: var(--navy);
+    color: #cfcfcf;
+    padding: 70px 40px 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+.footer-top {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.6fr 1fr 1fr 1.2fr;
+    gap: 40px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+footer .about-col .logo {
+    margin-bottom: 18px;
+}
+
+footer .about-col p {
+    font-size: 13px;
+    line-height: 1.8;
+    color: #9a9a9a;
+    max-width: 300px;
+    margin: 0 0 22px;
+}
+
+footer .socials {
+    display: flex;
+    gap: 14px;
+}
+
+footer .socials a {
+    width: 34px;
+    height: 34px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #cfcfcf;
+}
+
+footer .socials a:hover {
+    border-color: var(--gold);
+    color: var(--gold);
+}
+
+.footer-col h4 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    color: #fff;
+    margin: 0 0 20px;
+}
+
+.footer-col a {
+    display: block;
+    font-size: 13px;
+    color: #9a9a9a;
+    margin-bottom: 13px;
+}
+
+.footer-col a:hover {
+    color: var(--gold);
+}
+
+.contact-line {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 13px;
+    color: #9a9a9a;
+    margin: 0 0 16px;
+}
+
+.contact-line svg {
+    color: var(--gold);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.footer-bottom {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0;
+    font-size: 12px;
+    color: #777;
+}
+
+.footer-legal {
+    display: flex;
+    gap: 24px;
+}
+
+.footer-legal a {
+    color: #777;
+    font-size: 12px;
+}
+
+.footer-legal a:hover {
+    color: var(--gold);
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 900px) {
+
+    .property-grid,
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-top {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .cta-section {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+
+    header {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 20px;
+        gap: 16px;
+    }
+
+    header .navbar {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .properties-hero h1,
+    .services-hero h1 {
+        font-size: 36px;
+    }
+
+    .property-grid,
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .filter-form {
+        flex-direction: column;
+    }
+
+    .footer-top {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+    }
+}
+
+
+.properties-hero main {
+    padding: 90px 40px 110px;
+    max-width: 640px;
+}
+
+.properties-hero .eyebrow {
+    color: var(--gold-light);
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin: 0 0 18px;
+}
+
+.properties-hero h1 {
+    color: #ffffff;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 52px;
+    font-weight: 500;
+    line-height: 1.15;
+    margin: 0 0 22px;
+}
+
+.properties-hero .sub-text {
+    color: #d8d8d8;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    max-width: 480px;
+    margin: 0;
+}
+
+.properties-hero{
+    background: url(images/image8.jpg);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+}
+

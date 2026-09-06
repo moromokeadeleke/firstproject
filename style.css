@@ -23,6 +23,12 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 0 40px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    z-index: 10;
 }
 
 header .logo {
@@ -61,11 +67,12 @@ header .navbar a{
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 0.5px;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0;
 }
 
 header .navbar a:hover{
     border-bottom: 2px solid #bb925c;
-    padding-bottom: 10px;
 }
 
 header .btn{

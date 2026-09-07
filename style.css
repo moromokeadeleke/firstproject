@@ -1,5 +1,6 @@
 *{
     text-decoration: none;
+    
 }
 
 body{
@@ -123,6 +124,8 @@ main h1{
     font-size: 60px;
     font-weight: 500;
     color: white;
+    width: 800px;
+    margin-top: 80px;
 }
 
 main p{
@@ -143,4 +146,573 @@ main a{
     font-family: "Montserrat", sans-serif;
     letter-spacing: 0.5px;
     color: #17191A;
+}
+
+.achievements{
+    background-color: #0b0e14;
+    opacity: 0.9;
+    display: flex;
+    height: 100px;
+    width: 77%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -102px;
+    margin-left: 270px;
+    border: 1px solid rgba(255, 255, 255, 0.2);;
+    border-radius: 20px 20px 0 0;
+}
+
+.achievements .one{
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;  
+    justify-content: space-evenly; 
+    align-items: center;
+    width: 300px;
+    padding: 0 18px;
+    height: 60px;
+    gap: 15px;
+}
+
+.achievements .one .icons{
+    color: #c5a06a;
+    font-size: 45px;
+}
+
+.achievements .one .numbers{
+    margin-bottom: 40px;
+}
+
+.achievements h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 34px;
+    font-weight: 200;
+    color: #c5a06a;
+    margin-bottom: 0px;
+
+}
+
+.achievements p{
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 400px;
+    margin-top: 5px;
+    margin-bottom: -15px;
+}
+
+#last{
+    border: none;
+}
+
+.featured{
+    padding: 40px 60px;
+    height: 340px;
+    display: flex;
+}
+
+.featured .details{
+    width: 24%;
+    padding-right: 40px;
+}
+
+.featured .details h3{
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #c5a06a;
+}
+
+.featured .details h1{
+    font-family: "Cormorant Garamond", serif;
+    font-size: 48px;
+    font-weight: 400;
+    margin-top: -2px;
+    color: #222222;
+    line-height: 1.05;
+    width: 290px;
+
+}
+
+.featured .details p{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+    margin-top: -4px;
+    padding-bottom: 20px;
+    line-height: 1.7;
+    color: #4F4B46;
+}
+
+.featured .details a{
+    padding: 12px 20px;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0.5px;
+    color: #17191A;
+    border: 1px solid #c5a06a;
+}
+
+.featured .collection{
+    display: flex;
+    justify-content: space-between;
+    width: 76%;
+    margin-right: 15px;
+    gap: 5px;
+}
+
+.featured .collection .card{
+    width: 285px;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #cecdcc;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.featured .collection .card .card-img{
+    height: 54%;
+    overflow: hidden;
+    position: relative;
+}
+
+.featured .collection .card .card-img span{
+    color: white;
+    background-color: #865514;
+    opacity: 0.8;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-family: "Montserrat", sans-serif;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    border-radius: 2px;
+}
+
+.featured .collection .card .card-img img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.featured .collection .card .card-description{
+    height: 46%;
+    padding: 0 15px;
+}
+
+.card-description h2{
+    font-family: "Cormorant Garamond", serif;
+    font-size: 22px;
+    font-weight: 500;
+    color: #181818;
+}
+
+.card-description p{
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #31302f;
+    display: flex;
+    gap: 5px;
+    padding-top: 0;
+    margin-top: -5px;
+}
+
+.card-description .prop {
+    display: flex;
+    gap: 45px;
+    color: #0a0a0a;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.card-description .prop span i{
+    padding-right: 5px;
+}
+
+.card-description h1{
+    font-family: "Montserrat", sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    color: #97611a;
+    margin-top: 15px;
+}
+
+.card-description h1 span{
+    color: #31302f;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.about{
+    background-color: #f7f4efb4;
+    height: 270px;
+    padding: 0 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about .image{
+    height: 270px;
+    width: 430px;
+    overflow: hidden;
+}
+
+.about .image img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.about .discover{
+    padding: 10px 40px 0;
+    width: 580px;
+    height: 260px;
+}
+
+.about .discover h3{
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #c5a06a;
+}
+
+.about .discover .sub{
+    border-right: 1px solid #b3afac;
+}
+
+.about .discover .sub h1{
+    font-family: "Cormorant Garamond", serif;
+    font-size: 40px;
+    font-weight: 400;
+    color: #222222;
+    line-height: 1.05;
+}
+
+.about .discover .sub p{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.7;
+    color: #4F4B46;
+    margin-top: -15px;
+    padding-bottom: 14px;
+}
+
+.about .discover .sub a{
+    padding: 12px 20px;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0.5px;
+    color: #17191A;
+    border: 1px solid #c5a06a;
+}
+
+.about .qualities{
+    width: 280px;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 18px;
+}
+
+.about .qualities .each{
+    display: flex;
+    gap: 20px;
+}
+
+.about .qualities .each .badge{
+    display: flex;
+    justify-content: center;
+    padding-top: 4px;
+}
+
+.about .qualities .each i{
+    color: #c5a06a;
+    font-size: 35px;
+}
+
+.about .qualities .each .words{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+.about .qualities .each .words h3{
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    padding-bottom: 4px;
+    color: #3a3a3a;
+}
+
+.about .qualities .each .words p{
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    color: #4F4B46;
+}
+
+#diff{
+    max-width: 100px;
+}
+
+.services{
+    background-color: #0b0e14;
+    opacity: 0.9;
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 60px;
+} 
+
+.services .our-services{
+    width: 30%;
+}
+
+.services .our-services h3{
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #c5a06a;
+}
+
+.services .our-services h1{
+    font-family: "Cormorant Garamond", serif;
+    font-size: 36px;
+    font-weight: 400;
+    color: white;
+    line-height: 1.05;
+}
+
+.services .service-list{
+    display: flex;
+    align-items: center;
+    font-family: "Montserrat" , sans-serif;
+    margin-right: -25px;
+
+}
+
+.services .service-list .list{
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 0 20px;
+    width: 180px;
+    color: white;
+}
+
+.services .service-list .list .icon{
+    text-align: center;
+}
+
+.services .service-list .list .icon i{
+    color: #c5a06a;
+    font-size: 25px;
+}
+
+.services .service-list .list h3{
+    font-weight: 300;
+    font-size: 15px;
+    text-align: center;
+}
+
+.services .service-list .list p{
+    font-weight: 200;
+    font-size: 13px;
+    text-align: center;
+}
+
+#null{
+    border: none;
+    padding-top: 13px;
+}
+
+.locations{
+    height: 100px;
+    padding: 30px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.locations .our-locations{
+
+}
+
+.locations .our-locations h3{
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #c5a06a;
+}
+
+.locations .our-locations h1{
+    font-family: "Cormorant Garamond", serif;
+    font-size: 32px;
+    font-weight: 400;
+    color: #222222;
+    line-height: 1.05;
+}
+
+.locations .actual{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.locations .actual .flex{
+    padding: 0 44px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.locations .actual .flex h3{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.locations .actual .flex h3 svg{
+    color: #c5a06a;
+}
+
+.locations .actual .flex p{
+    font-weight: 400;
+    font-size: 14px;
+    color: #2e2d2d;
+}
+
+.locations .actual .flex p span{
+    font-size: 15px;
+    font-weight: 800;
+    margin: 0 5px;
+    color: #c5a06a;
+}
+
+#guess{
+    border-right: 1px solid #dad9d8;
+}
+
+.locations .button a{
+padding: 12px 20px;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0.5px;
+    color: #17191A;
+    border: 1px solid #c5a06a;
+}
+
+footer {
+    background-color: #0b0e14;
+    color: #cfcfcf;
+    padding: 70px 40px 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+.footer-top {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.6fr 1fr 1fr 1.2fr;
+    gap: 40px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+footer .about-col .logo {
+    margin-bottom: 18px;
+}
+
+footer .about-col p {
+    font-size: 13px;
+    line-height: 1.8;
+    color: #9a9a9a;
+    max-width: 300px;
+    margin: 0 0 22px;
+}
+
+footer .socials {
+    display: flex;
+    gap: 14px;
+}
+
+footer .socials a {
+    width: 34px;
+    height: 34px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #cfcfcf;
+}
+
+footer .socials a:hover {
+    border-color: var(--gold);
+    color: var(--gold);
+}
+
+.footer-col h4 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    color: #fff;
+    margin: 0 0 20px;
+}
+
+.footer-col a {
+    display: block;
+    font-size: 13px;
+    color: #9a9a9a;
+    margin-bottom: 13px;
+}
+
+.footer-col a:hover {
+    color: var(--gold);
+}
+
+.contact-line {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 13px;
+    color: #9a9a9a;
+    margin: 0 0 16px;
+}
+
+.contact-line svg {
+    color: var(--gold);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.footer-bottom {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0;
+    font-size: 12px;
+    color: #777;
+}
+
+.footer-legal {
+    display: flex;
+    gap: 24px;
+}
+
+.footer-legal a {
+    color: #777;
+    font-size: 12px;
+}
+
+.footer-legal a:hover {
+    color: var(--gold);
 }

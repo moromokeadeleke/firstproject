@@ -216,11 +216,13 @@ header .btn #touch{
 .hero-box .just-text h1 {
     margin-top: 40%;
     font-size: 20px;
+    font-family: "Cormorant Garamond" , serif;
 }
 
 .hero-box .just-text p {
-    font-size: 20px;
+    font-size: 15px;
     font-style: normal;
+    font-family: "Montserrat" , sans-serif;
 }
 
 

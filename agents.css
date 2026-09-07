@@ -141,3 +141,60 @@ header .btn #touch{
     font-weight: 600;
     padding: 0.5rem 0;
 }
+
+.hero-section  {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.hero-box {
+    width: 200px;
+    height: 450px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.img-agent img {
+    width: 100%;
+    height: 200px;
+}
+
+.hero-text * {
+    margin: 0;
+}
+
+.hero-section a {
+    text-decoration: none;
+    color: #bb925c;
+}
+
+.hero-text {
+    padding: 1rem;
+}
+
+.hero-text h1 {
+    font-size: 15px;
+}
+
+
+.hero-text p {
+    font-size: 10px;
+}
+
+
+.hero-text span {
+    font-size: 10px;
+}
+
+.disc h1 {
+    font-size: 12px;
+    font-weight: normal;
+    padding: 15px 0;
+}
+
+.disc .button {
+    padding-top: 1rem;
+}

@@ -134,12 +134,19 @@ header .btn #touch{
     font-weight: 500;
     color: #D6B982;
     margin: 0;
+    font-family: "Cormorant Garamond" , serif;
 }
 
 .text-1 h2 {
     font-size: 40px;
     font-weight: 600;
     padding: 0.5rem 0;
+    font-family: "Cormorant Garamond" , serif;
+}
+
+.text-1 p {
+    font-family: "Montserrat" , sans-serif;
+    font-size: 21px;
 }
 
 .hero-section  {
@@ -177,16 +184,19 @@ header .btn #touch{
 
 .hero-text h1 {
     font-size: 15px;
+    font-family: "Cormorant Garamond" , serif;
 }
 
 
 .hero-text p {
     font-size: 10px;
+    font-family: "Montserrat" , sans-serif;
 }
 
 
 .hero-text span {
     font-size: 10px;
+    font-family: "Montserrat" , sans-serif;
 }
 
 .disc h1 {

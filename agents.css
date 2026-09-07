@@ -206,14 +206,15 @@ header .btn #touch{
 
 .hero-box .just-text {
     width: 270px;
-    height: 450px;
-    background-color: tan;
+    height: 430px;
+    background-color: #F4EDE5;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     text-align: left;
 }
 
 
 .hero-box .just-text h1 {
+    margin-top: 40%;
     font-size: 20px;
 }
 
@@ -222,6 +223,11 @@ header .btn #touch{
     font-style: normal;
 }
 
+
+.action a {
+    color: #B7B09E;
+}
 .hero-box .just-text .action{
-    border: 1px solid gold;
+    border: 1px solid #B7B09E;
+    padding: 15px;
 }

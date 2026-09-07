@@ -198,3 +198,30 @@ header .btn #touch{
 .disc .button {
     padding-top: 1rem;
 }
+
+
+.just-text {
+    padding: 10px;
+}
+
+.hero-box .just-text {
+    width: 270px;
+    height: 450px;
+    background-color: tan;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    text-align: left;
+}
+
+
+.hero-box .just-text h1 {
+    font-size: 20px;
+}
+
+.hero-box .just-text p {
+    font-size: 20px;
+    font-style: normal;
+}
+
+.hero-box .just-text .action{
+    border: 1px solid gold;
+}

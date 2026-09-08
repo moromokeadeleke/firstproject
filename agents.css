@@ -147,6 +147,7 @@ header .btn #touch{
 .text-1 p {
     font-family: "Montserrat" , sans-serif;
     font-size: 17px;
+    line-height: 1.5;
 }
 
 .hero-section  {
@@ -233,6 +234,7 @@ header .btn #touch{
     font-size: 14px;
     font-style: normal;
     font-family: "Montserrat" , sans-serif;
+    line-height: 1.5;
 }
 
 
